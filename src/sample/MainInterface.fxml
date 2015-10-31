@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.text.*?>
@@ -48,13 +50,6 @@
                     </menus>
                   </MenuBar>
                </top>
-               <center>
-                  <Canvas height="424.0" width="577.0" BorderPane.alignment="CENTER">
-                     <BorderPane.margin>
-                        <Insets bottom="300.0" />
-                     </BorderPane.margin>
-                  </Canvas>
-               </center>
                <left>
                   <Accordion maxHeight="-Infinity" prefHeight="400.0" prefWidth="202.0" BorderPane.alignment="TOP_CENTER">
                     <panes>
@@ -67,8 +62,8 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Button id="btnNextImage" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Next Image" />
-                                    <Button id="btnPreviousImage" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Previous Image" />
+                                    <Button id="btnNextImage" fx:id="btnNextImage" mnemonicParsing="false" onAction="#handleNextImageAction" prefHeight="25.0" prefWidth="200.0" text="Next Image" />
+                                    <Button id="btnPreviousImage" fx:id="btnPreviousImage" layoutY="25.0" mnemonicParsing="false" onAction="#handlePrevImageAction" prefHeight="25.0" prefWidth="200.0" text="Previous Image" />
                                  </children>
                               </AnchorPane>
                         </content>
@@ -79,6 +74,9 @@
                      </BorderPane.margin>
                   </Accordion>
                </left>
+               <center>
+                  <Canvas fx:id="imgViewCanvas" height="477.0" onSwipeLeft="#handleNextImageAction" onSwipeRight="#handlePrevImageAction" width="581.0" BorderPane.alignment="CENTER" />
+               </center>
             </BorderPane>
          </children>
       </Pane>
