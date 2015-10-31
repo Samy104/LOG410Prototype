@@ -1,7 +1,10 @@
 package sample;
 
+import com.mrlonee.radialfx.settingsmenu.RadialSettingsMenu;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
@@ -10,6 +13,10 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import javax.swing.text.html.ImageView;
@@ -18,6 +25,9 @@ import javax.swing.text.html.ImageView;
 public class Main extends Application {
 
     ImageManager imgMan;
+
+    private Group container;
+    private RadialSettingsMenu radialMenu;
 
     public static void main(String[] args) {
         launch(args);
@@ -36,8 +46,37 @@ public class Main extends Application {
 
         //Prepare the UI Template
         Parent root = FXMLLoader.load(getClass().getResource("MainInterface.fxml"));
+        /*Scene scene = new Scene(root, 1280, 1080) ;
         primaryStage.setTitle("Reef Inspector");
-        primaryStage.setScene(new Scene(root, 1280, 1080));
+        primaryStage.setScene(scene);*/
+
+        container = new Group(root);
+        final Scene scene = new Scene(container);
+        primaryStage.setResizable(false);
+        primaryStage.setScene(scene);
+        primaryStage.setWidth(1280);
+        primaryStage.setHeight(1080);
+        primaryStage.centerOnScreen();
+        primaryStage.setTitle("Reef Inspector");
+
+        radialMenu = new RadialSettingsMenu();
+        container.getChildren().addAll(radialMenu);
+        radialMenu.setVisible(false);
+
+        scene.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+            @Override
+            public void handle(MouseEvent event) {
+                if (event.getButton() == MouseButton.SECONDARY) {
+                    radialMenu.setTranslateX(event.getX());
+                    radialMenu.setTranslateY(event.getY());
+                    radialMenu.setVisible(true);
+                } else {
+                    radialMenu.setVisible(false);
+                }
+            }
+        });
+
 
         primaryStage.show();
     }
