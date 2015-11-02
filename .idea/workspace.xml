@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90cff349-ae13-464f-b719-d87caa457000" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/CommandExportJSON.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/Controller.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/model/ImageInformation$Type.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/model/ImageInformation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/ImageManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/core/RadialMenuItem$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/core/RadialMenuItem$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/core/RadialMenuItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/core/RadialMenuItemBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu$SelectionEventHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenuCenter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/ImageInformation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/LOG410Prototype/sample/MainInterface.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/CommandExportJSON.java" afterPath="$PROJECT_DIR$/src/sample/CommandExportJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ImageManager.java" afterPath="$PROJECT_DIR$/src/sample/ImageManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/MainInterface.fxml" afterPath="$PROJECT_DIR$/src/sample/MainInterface.fxml" />
     </list>
     <ignored path="LOG410Prototype.iws" />
@@ -77,21 +43,21 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2413793">
-              <caret line="39" column="131" selection-start-line="39" selection-start-column="131" selection-end-line="39" selection-end-column="131" />
+            <state vertical-scroll-proportion="-2.3035715">
+              <caret line="75" column="28" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/ImageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.108108">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#443#461#0" expanded="true" />
+                <element signature="e#417#435#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,11 +123,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/mrlonee/radialfx/settingsmenu/RadialSettingsMenu.java" />
         <option value="$PROJECT_DIR$/src/sample/CommandExportJSON.java" />
-        <option value="$PROJECT_DIR$/src/sample/MainInterface.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/ImageManager.java" />
         <option value="$PROJECT_DIR$/src/model/ImageInformation.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/MainInterface.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ImageManager.java" />
       </list>
     </option>
   </component>
@@ -639,17 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainInterface.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2413793">
-          <caret line="39" column="131" selection-start-line="39" selection-start-column="131" selection-end-line="39" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -670,6 +625,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ImageInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -682,23 +647,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ImageManager.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/MainInterface.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#461#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-2.3035715">
+          <caret line="75" column="28" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ImageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.108108">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#417#435#0" expanded="true" />
           </folding>
         </state>
       </provider>

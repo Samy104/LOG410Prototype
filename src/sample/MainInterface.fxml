@@ -81,7 +81,7 @@
                   </Accordion>
                </left>
                <center>
-                  <Canvas fx:id="imgViewCanvas" height="477.0" onSwipeLeft="#handleNextImageAction" onSwipeRight="#handlePrevImageAction" width="581.0" BorderPane.alignment="CENTER" />
+                  <Canvas fx:id="imgViewCanvas" height="477.0" onSwipeLeft="#handleNextImageAction" onSwipeRight="#handlePrevImageAction" width="581.0" BorderPane.alignment="TOP_LEFT" />
                </center>
             </BorderPane>
          </children>

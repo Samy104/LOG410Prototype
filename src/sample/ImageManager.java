@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
@@ -14,7 +13,6 @@ public class ImageManager {
 
     //FX Elements
     private Canvas imgViewCanvas;
-
 
     private Image currentImage;
     public ArrayList<ImageInformation> images = new ArrayList<ImageInformation>();
@@ -73,15 +71,17 @@ public class ImageManager {
     public void SetImage()
     {
         GraphicsContext gc = imgViewCanvas.getGraphicsContext2D();
+        ImageInformation img = images.get(currentImageIndex);
+        imgViewCanvas.setHeight(img.getImage().getHeight());
+        imgViewCanvas.setWidth(img.getImage().getWidth());
         gc.drawImage(currentImage, 0, 0, imgViewCanvas.getWidth(), imgViewCanvas.getHeight());
 
-        ImageInformation img = images.get(currentImageIndex);
         gc.setFill(Color.BLACK);
         for (int i = 0; i < 5; i++) {
             Point p = img.getPoints()[i];
             gc.fillOval(p.getX(), p.getY(), 25, 25);
-            gc.fillText(img.getTypes()[i].toString(), p.x , p.y - 10);
-            gc.fillText(String.valueOf(img.getFrequency()[i]), p.x , p.y - 5);
+            gc.fillText(img.getTypes()[i].toString(), p.x , p.y - 20);
+            gc.fillText(String.valueOf(img.getFrequency()[i] * 100) + "%", p.x , p.y - 5);
         }
     }
 }
