@@ -23,11 +23,11 @@
    <children>
       <Pane prefHeight="1080.0" prefWidth="1280.0">
          <children>
-            <Text fontSmoothingType="LCD" layoutX="517.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reef Inspector">
+           <!-- <Text fontSmoothingType="LCD" layoutX="517.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reef Inspector">
                <font>
                   <Font size="39.0" />
                </font>
-            </Text>
+            </Text>-->
             <BorderPane layoutX="2.0" prefHeight="1080.0" prefWidth="1280.0">
                <top>
                   <MenuBar prefHeight="25.0" prefWidth="1274.0" BorderPane.alignment="CENTER">

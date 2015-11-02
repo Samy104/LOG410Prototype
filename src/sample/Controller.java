@@ -147,7 +147,7 @@ public class Controller implements Initializable
             if (fileEntry.isDirectory()) {
                 listFilesForFolder(fileEntry);
             } else {
-                    Image img = new Image(folder.toURI().toString());
+                    Image img = new Image(fileEntry.toURI().toString());
                     imgMan.images.add(new ImageInformation(img, folder.toURI().toString(),
                             new ImageInformation.Type[] {
                                     ImageInformation.Type.SAND, ImageInformation.Type.FISH,
