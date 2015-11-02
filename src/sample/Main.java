@@ -3,6 +3,7 @@ package sample;
 import com.mrlonee.radialfx.settingsmenu.RadialSettingsMenu;
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
@@ -10,25 +11,31 @@ import javafx.scene.Scene;
 
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import model.ImageInformation;
 
-
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
+import java.util.ArrayList;
 
 
 public class Main extends Application {
 
-
+    public static Stage stage;
 
     private Group container;
     private RadialSettingsMenu radialMenu;
-
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
+        stage = primaryStage;
         // Prepare canvas
         /*ImageView iv = new ImageView(imgMan.getImage());
         Canvas canvas = new Canvas(300, 250);
@@ -66,5 +73,4 @@ public class Main extends Application {
 
         primaryStage.show();
     }
-
 }

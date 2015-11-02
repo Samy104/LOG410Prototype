@@ -5,7 +5,9 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import model.ImageInformation;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class ImageManager {
@@ -15,49 +17,51 @@ public class ImageManager {
 
 
     private Image currentImage;
-    private ArrayList<String> imageList;
-    private int currentImageIndex = 0;
+    public ArrayList<ImageInformation> images = new ArrayList<ImageInformation>();
+    private int currentImageIndex = -1;
 
     public ImageManager(Canvas imgViewCanvas)
     {
         assert imgViewCanvas != null : "fx:id=\"imgView\" was not injected: check your FXML file 'MainInterface.fxml'.";
 
         this.imgViewCanvas = imgViewCanvas;
-        currentImage = new Image("file:..\\..\\images\\image1.jpg");
-        PopulateImageList();
+        //currentImage = new Image("file:..\\..\\images\\image1.jpg");
+        //PopulateImageList();
     }
 
     public void NextImage()
     {
-        ++currentImageIndex;
-        if(currentImageIndex >= imageList.size())
-        {
-            currentImageIndex = 0;
-        }
+        if(!images.isEmpty()) {
+            ++currentImageIndex;
+            if (currentImageIndex >= images.size()) {
+                currentImageIndex = 0;
+            }
 
-        currentImage = new Image( imageList.get(currentImageIndex) );
-        SetImage();
+            currentImage = images.get(currentImageIndex).getImage();
+            SetImage();
+        }
     }
 
     public void PreviousImage()
     {
-        --currentImageIndex;
-        if(currentImageIndex < 0)
-        {
-            currentImageIndex = imageList.size() - 1;
-        }
+        if(!images.isEmpty()) {
+            --currentImageIndex;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.size() - 1;
+            }
 
-        currentImage = new Image( imageList.get(currentImageIndex) );
-        SetImage();
+            currentImage = images.get(currentImageIndex).getImage();
+            SetImage();
+        }
     }
 
     // The usual way this list would be populated would be with the folder hierarchy.
     // In this prototype, we will add them manually.
     public void PopulateImageList()
     {
-        imageList = new ArrayList<String>();
+        /*imageList = new ArrayList<String>();
         imageList.add("file:..\\..\\images\\image1.jpg");
-        imageList.add("file:..\\..\\images\\image2.jpg");
+        imageList.add("file:..\\..\\images\\image2.jpg");*/
     }
 
     public Image GetImage()
@@ -71,13 +75,13 @@ public class ImageManager {
         GraphicsContext gc = imgViewCanvas.getGraphicsContext2D();
         gc.drawImage(currentImage, 0, 0, imgViewCanvas.getWidth(), imgViewCanvas.getHeight());
 
-
-
+        ImageInformation img = images.get(currentImageIndex);
         gc.setFill(Color.BLACK);
-        gc.fillOval(imgViewCanvas.getHeight()/4, imgViewCanvas.getWidth()/4, 25, 25);
-        gc.fillOval(imgViewCanvas.getHeight()*3/4, imgViewCanvas.getWidth()/4, 25, 25);
-        gc.fillOval(imgViewCanvas.getHeight()/2, imgViewCanvas.getWidth()/2, 25, 25);
-        gc.fillOval(imgViewCanvas.getHeight()/4, imgViewCanvas.getWidth()*3/4, 25, 25);
-        gc.fillOval(imgViewCanvas.getHeight()*3/ 4, imgViewCanvas.getWidth()*3/4, 25, 25);
+        for (int i = 0; i < 5; i++) {
+            Point p = img.getPoints()[i];
+            gc.fillOval(p.getX(), p.getY(), 25, 25);
+            gc.fillText(img.getTypes()[i].toString(), p.x , p.y - 10);
+            gc.fillText(String.valueOf(img.getFrequency()[i]), p.x , p.y - 5);
+        }
     }
 }
